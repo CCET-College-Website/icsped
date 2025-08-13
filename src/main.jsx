@@ -5,6 +5,7 @@ import App from "./App";
 import Home from "./pages/Home";
 import NoPage from "./pages/NoPage";
 import ConferenceTheme from "./pages/conference-theme";
+import PaperSubmission from "./pages/page-submission";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -21,7 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="keynote-speakers" element={<NoPage />} />
           <Route path="conference-tracks" element={<NoPage />} />
           <Route path="registration-details" element={<NoPage />} />
-          <Route path="paper-submission" element={<NoPage />} />
+          <Route path="paper-submission" element={<PaperSubmission />} />
           <Route path="authors-guidelines" element={<NoPage />} />
           <Route path="contact" element={<NoPage />} />
           <Route path="*" element={<NoPage />} />
