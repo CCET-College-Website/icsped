@@ -124,7 +124,6 @@ const RegistrationDetails = () => {
       <br />
       Authors claiming discounted registration fee must produce valid proof for availing the discounted fee
       (copy of student matriculation card, IEEE membership card must be submitted)
-    
     </p>
   </li>
     <br />
