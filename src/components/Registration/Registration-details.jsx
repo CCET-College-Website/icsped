@@ -1,5 +1,5 @@
 import React from "react";
-import "./RegistrationDetails.css";
+import "./Registration-details.css";
 
 const RegistrationDetails = () => {
   return (
@@ -117,10 +117,22 @@ const RegistrationDetails = () => {
         * For extra pages Indian author have to pay Rs. 500 per extra page and foreign author USD 50 per extra page (up to 8 pages).
       </p>
       <ul className="conditions">
-        <li>Every accepted paper must have a UNIQUE SEPARATE REGISTRATION...</li>
-        <li>Authors claiming discounted registration fee must produce valid proof...</li>
-        <li>Registration fee includes Conference Kit, Breakfast and Lunch...</li>
-      </ul>
+  <li>
+    Every accepted paper must have a UNIQUE SEPARATE REGISTRATION, i.e., separate 
+    registration fee is to be paid for each accepted paper in order to be included in the proceedings.
+    <p>
+      <br />
+      Authors claiming discounted registration fee must produce valid proof for availing the discounted fee
+      (copy of student matriculation card, IEEE membership card must be submitted)
+    
+    </p>
+  </li>
+    <br />
+  <li>
+    Registration fee includes Conference Kit, Breakfast and Lunch on conference days and Conference Gala Dinner.
+  </li>
+</ul>
+
     </div>
   );
 };

@@ -5,6 +5,7 @@ import App from "./App";
 import Home from "./pages/Home";
 import NoPage from "./pages/NoPage";
 import "./index.css";
+import RegistrationDetails from "./components/Registration/Registration-details";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -19,7 +20,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                     <Route path="organising-committee" element={<NoPage />} />
                     <Route path="keynote-speakers" element={<NoPage />} />
                     <Route path="conference-tracks" element={<NoPage />} />
-                    <Route path="registration-details" element={<NoPage />} />
+                    <Route path="registration-details" element={<RegistrationDetails/>} />
                     <Route path="paper-submission" element={<NoPage />} />
                     <Route path="authors-guidelines" element={<NoPage />} />
                     <Route path="contact" element={<NoPage />} />

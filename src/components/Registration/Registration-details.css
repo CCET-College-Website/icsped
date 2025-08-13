@@ -71,6 +71,19 @@ th {
   margin-top: 10px;
   padding-left: 20px;
 }
+.conditions li {
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif; /* matches your screenshot style */
+  margin-bottom: 10px;
+}
+
+.conditions li p {
+  margin-top: 5px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
@@ -87,5 +100,27 @@ th {
   table {
     font-size: 12px;
     min-width: 600px;
+  }
+}
+
+
+/* Desktop styling for .conditions */
+@media screen and (min-width: 769px) {
+  .conditions {
+    list-style: none; /* Remove bullets */
+    text-align: center; /* Center text */
+    padding-left: 0; /* Remove extra indentation */
+  }
+  .conditions li {
+    margin-bottom: 6px; /* Optional spacing between lines */
+  }
+}
+
+/* Keep original bullet style for mobile */
+@media screen and (max-width: 768px) {
+  .conditions {
+    list-style: disc;
+    padding-left: 20px;
+    text-align: left;
   }
 }
