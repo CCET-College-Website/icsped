@@ -1,0 +1,53 @@
+.keynote-section {
+
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: white;
+  overflow: visible; /* allow shadow to show outside */
+}
+
+.keynote-container {
+    margin-right: 200px;
+    background-color: white;
+    padding: 39px;
+    width: 142%;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    margin: 167px 0px;
+    position: relative;
+    left: -95px;
+    
+  }
+
+
+.keynote-title {
+  color: black;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.keynote-underline {
+  width: 80px;
+  height: 5px;
+  background-color: #3a0e20;
+  margin: 0 auto 30px auto;
+}
+
+.keynote-list {
+  color: black;
+  font-family: 'Merriweather', serif;
+  list-style: none;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding-left: 0;
+  margin: 0;
+}
+
+.keynote-list li {
+  margin: 5px 0;
+}
