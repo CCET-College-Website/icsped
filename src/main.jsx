@@ -11,6 +11,7 @@ import "./index.css";
 import RegistrationDetails from "./components/Registration/Registration-details";
 import About from "./pages/About";
 import OrganizingCommittee from "./pages/OrganizingCommittee";
+import AdvisoryCommittee from "./pages/AdvisoryCommittee.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -21,7 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="about" element={<About />} />
           <Route path="theme" element={<ConferenceTheme />} />
           <Route path="dates" element={<NoPage />} />
-          <Route path="advisory-committee" element={<NoPage />} />
+          <Route path="advisory-committee" element={<AdvisoryCommittee />} />
           <Route path="organising-committee" element={<OrganizingCommittee />} />
           <Route path="keynote-speakers" element={<NoPage />} />
           <Route path="conference-tracks" element={<NoPage />} />

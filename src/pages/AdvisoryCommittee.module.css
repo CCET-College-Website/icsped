@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea:wght@400;500;600;700&display=swap');
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(135deg, #F9F9F9 0%, #f0f0f0 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    font-family: 'Caladea', serif;
+    overflow-x: hidden;
+}
+
+.mainTitle {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4A0638;
+    font-size: 32.2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 40.28px;
+    letter-spacing: 0.5px;
+    text-shadow: 2px 2px 4px rgba(74, 6, 56, 0.2);
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInDown 1s ease-out 0.3s forwards;
+}
+
+.underline {
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #4A0638 0%, #7A1458 100%);
+    margin-bottom: 50px;
+    opacity: 0;
+    animation: expandWidth 0.8s ease-out 0.8s forwards;
+    border-radius: 2px;
+}
+
+.sectionTitle {
+    text-align: center;
+    color: #4A0638;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-shadow: 1px 1px 3px rgba(74, 6, 56, 0.2);
+    margin-bottom: 40px;
+    position: relative;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 1.2s forwards;
+}
+
+.sectionTitle::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #4A0638, #7A1458);
+    animation: expandTitleLine 0.6s ease-out 1.8s forwards;
+}
+
+.advisorsList {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.advisor {
+    text-align: center;
+    padding: 25px 20px;
+    border-radius: 12px;
+    opacity: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(250, 250, 250, 0.8));
+    border: 1px solid rgba(74, 6, 56, 0.1);
+    box-shadow: 0 4px 15px rgba(74, 6, 56, 0.1);
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.slideLeft {
+    animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.slideRight {
+    animation: slideInRight 0.6s ease-out forwards;
+}
+
+.advisor::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    border-radius: 12px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.advisor:hover::before {
+    animation: shimmer 0.6s ease-out;
+}
+
+@keyframes shimmer {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+.advisor:hover {
+    background: linear-gradient(145deg, rgba(74, 6, 56, 0.05), rgba(74, 6, 56, 0.02));
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(74, 6, 56, 0.2);
+    border-color: rgba(74, 6, 56, 0.2);
+}
+
+.advisorName {
+    color: #2c2c2c;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+    margin-bottom: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.advisor:hover .advisorName {
+    color: #4A0638;
+    transform: scale(1.02);
+}
+
+.advisorTitle {
+    color: #4A0638;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-shadow: 1px 1px 2px rgba(74, 6, 56, 0.1);
+    margin-bottom: 8px;
+    font-style: italic;
+    position: relative;
+    z-index: 2;
+}
+
+.advisorInstitution {
+    color: #666;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+    text-shadow: none;
+    position: relative;
+    z-index: 2;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes expandWidth {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: 50px;
+        opacity: 1;
+    }
+}
+
+@keyframes expandTitleLine {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80px;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.advisor:nth-child(1) { animation-delay: 2s; }
+.advisor:nth-child(2) { animation-delay: 2.1s; }
+.advisor:nth-child(3) { animation-delay: 2.2s; }
+.advisor:nth-child(4) { animation-delay: 2.3s; }
+.advisor:nth-child(5) { animation-delay: 2.4s; }
+.advisor:nth-child(6) { animation-delay: 2.5s; }
+.advisor:nth-child(7) { animation-delay: 2.6s; }
+.advisor:nth-child(8) { animation-delay: 2.7s; }
+.advisor:nth-child(9) { animation-delay: 2.8s; }
+.advisor:nth-child(10) { animation-delay: 2.9s; }
+.advisor:nth-child(11) { animation-delay: 3s; }
+
+@media (max-width: 1024px) {
+    .advisorsList {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        padding: 15px;
+    }
+
+    .advisor {
+        padding: 22px 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 15px;
+    }
+
+    .mainTitle {
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 15px;
+    }
+
+    .underline {
+        margin-bottom: 35px;
+    }
+
+    .sectionTitle {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+
+    .advisorsList {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .advisor {
+        padding: 20px 15px;
+    }
+
+    .advisorName {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 8px;
+    }
+
+    .advisorTitle {
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 6px;
+    }
+
+    .advisorInstitution {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .advisor:nth-child(n) {
+        animation-delay: 1.5s !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 10px;
+    }
+
+    .mainTitle {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .sectionTitle {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .advisor {
+        padding: 15px 12px;
+    }
+
+    .advisorName {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .advisorTitle {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .advisorInstitution {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .advisor:nth-child(n) {
+        animation-delay: 1.2s !important;
+    }
+}
+
+* {
+    scroll-behavior: smooth;
+}
