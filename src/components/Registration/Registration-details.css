@@ -1,0 +1,126 @@
+.registration-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.sub-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Scrollable table container */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: auto; /* Firefox */
+}
+
+/* Scrollbar styles for Chrome, Safari, Edge */
+.table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px; /* Ensures horizontal scroll on small screens */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+.section-header {
+  background-color: #e8e8e8;
+  font-weight: bold;
+  text-align: left;
+}
+
+.note {
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.conditions {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+.conditions li {
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif; /* matches your screenshot style */
+  margin-bottom: 10px;
+}
+
+.conditions li p {
+  margin-top: 5px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  th, td {
+    padding: 6px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 18px;
+  }
+  table {
+    font-size: 12px;
+    min-width: 600px;
+  }
+}
+
+
+/* Desktop styling for .conditions */
+@media screen and (min-width: 769px) {
+  .conditions {
+    list-style: none; /* Remove bullets */
+    text-align: center; /* Center text */
+    padding-left: 0; /* Remove extra indentation */
+  }
+  .conditions li {
+    margin-bottom: 6px; /* Optional spacing between lines */
+  }
+}
+
+/* Keep original bullet style for mobile */
+@media screen and (max-width: 768px) {
+  .conditions {
+    list-style: disc;
+    padding-left: 20px;
+    text-align: left;
+  }
+}
