@@ -122,15 +122,20 @@ export default function Header() {
 
                 {(dropdownItems.length > 0 || windowWidth < 769) && (
                     <li className={`nav-item dropdown dropdown-mobile ${isDropdownActive ? "active" : ""}`}>
-                        <a
-                            href="#more"
+                        <span
                             className="nav-link"
                             onClick={toggleDropdown}
+                            style={{ cursor: "pointer" }}
+                            tabIndex={0}
+                            onKeyDown={e => { if (e.key === "Enter" || e.key === " ") toggleDropdown(e); }}
+                            aria-haspopup="true"
+                            aria-expanded={isDropdownActive}
+                            role="button"
                         >
                             More
                             <span className="mobile-dropdown-arrow"></span>
                             <div className="dropdown-icon"></div>
-                        </a>
+                        </span>
                         <div className="dropdown-content">
                             {dropdownItems.map((item, index) => (
                                 <Link

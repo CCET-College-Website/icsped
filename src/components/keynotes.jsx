@@ -19,6 +19,6 @@ export default function keynotes() {
           </ul>
         </div>
       </section>
-    </div>
-  );
+      </div>
+  );
 }

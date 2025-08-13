@@ -12,6 +12,7 @@
   justify-content: space-between;
   margin-bottom: 50px;
   gap: 40px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
 }
 
 .about-container.reverse {
@@ -64,6 +65,7 @@
   display: flex;
   align-items: center;
   padding: 50px 5%;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
 }
 
 .about-ccet-content {

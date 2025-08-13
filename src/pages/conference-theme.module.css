@@ -7,7 +7,9 @@
   color: #5E0847;
   flex-wrap: wrap; /* allow wrapping on small screens */
 }
-
+.conferenceContainer{
+  box-shadow : 0 8px 30px rgba(0, 0, 0, 0.18);
+}
 .contentSection,
 .imageSection {
   flex: 1 1 50%; /* allow resizing */
