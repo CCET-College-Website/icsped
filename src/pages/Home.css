@@ -84,7 +84,7 @@
 }
 
 .accent-line {
-    width: clamp(60px, 15vw, 100px);
+    width: clamp(60px, 15vw, 150px);
     height: 6px;
     border-top: 6px #4A0638 solid;
     margin-bottom: clamp(25px, 4vh, 35px);
