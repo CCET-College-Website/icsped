@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./components/header/header.jsx";
-import Footer from "./components/footer/footer.jsx"; // <-- Import Footer
+import Footer from "./components/footer/footer.jsx";
 import "./App.css";
 
 export default function App() {
