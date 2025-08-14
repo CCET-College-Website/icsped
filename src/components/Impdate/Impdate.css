@@ -1,0 +1,59 @@
+.impdate-page {
+  font-family: 'Times New Roman', serif;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px;
+  color: black;
+}
+
+.impdate-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.impdate-underline {
+  width: 50px;
+  height: 3px;
+  background-color: #5c1248;
+  margin-top: 20px; 
+  margin-bottom: 40px;
+}
+
+.impdate-table {
+  border-collapse: collapse;
+  font-size: 1rem;
+  background: white;
+  width: 100%;
+  max-width: 800px;
+}
+
+.impdate-table td {
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.impdate-table .bold {
+  font-weight: bold;
+}
+
+.impdate-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* zebra stripes */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .impdate-table {
+    font-size: 0.9rem;
+  }
+  .impdate-table td {
+    padding: 8px 10px;
+  }
+}
