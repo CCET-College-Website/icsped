@@ -1,0 +1,434 @@
+/* keynotes.module.css */
+
+/* Keynotes Page Styles */
+.keynotePage {
+    width: 100%;
+    background: white !important;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.keynoteSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.keynoteContainer {
+    background: transparent;
+    padding: 60px 40px;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    animation: slideUp 0.8s ease-out;
+    transform-origin: center bottom;
+}
+
+.keynoteTitle {
+    background: linear-gradient(135deg, #3a0e20, #6b1f3a, #8b2f50);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-out 0.2s both, gradientFlow 3s ease-in-out infinite;
+    text-align: center;
+    display: inline-block;
+    padding: 0;
+    border-radius: 0;
+    position: relative;
+}
+
+.keynoteUnderline {
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #3a0e20, #6b1f3a, #8b2f50, #6b1f3a, #3a0e20);
+    background-size: 200% 100%;
+    margin: 0 auto 40px auto;
+    border-radius: 2px;
+    animation: expandWidth 1s ease-out 0.4s both, gradientSlide 2s ease-in-out infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+.keynoteUnderline::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+.keynoteList {
+    color: #2c3e50;
+    font-family: 'Merriweather', serif;
+    list-style: none;
+    font-size: 1.2rem;
+    line-height: 2;
+    padding-left: 0;
+    margin: 0;
+    text-align: left;
+    max-width: 100%;
+    position: relative;
+}
+
+.keynoteList li {
+    margin: 25px 0;
+    padding: 25px 0;
+    background: transparent;
+    color: #2c3e50;
+    border: none;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: fadeInSlide 0.8s ease-out both;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+}
+
+/* Staggered animation delays */
+.keynoteList li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.keynoteList li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.keynoteList li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.keynoteList li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.keynoteList li:nth-child(5) {
+    animation-delay: 0.5s;
+}
+.keynoteList li:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+/* Elegant left border indicator */
+.keynoteList li::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+    width: 8px;
+    height: 8px;
+    background: linear-gradient(135deg, #3a0e20, #6b1f3a);
+    border-radius: 50%;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 15px rgba(58, 14, 32, 0.3);
+}
+
+/* Animated underline effect */
+.keynoteList li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #3a0e20, #6b1f3a, #8b2f50);
+    background-size: 200% 100%;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: gradientSlide 2s ease-in-out infinite;
+}
+
+/* Hover effects */
+.keynoteList li:hover {
+    transform: translateX(25px) scale(1.02);
+    color: #3a0e20;
+    text-shadow: 0 2px 8px rgba(58, 14, 32, 0.1);
+    font-weight: 600;
+}
+
+.keynoteList li:hover::before {
+    transform: translateY(-50%) scale(1.5);
+    left: -15px;
+    box-shadow:
+            0 0 20px rgba(58, 14, 32, 0.5),
+            0 0 40px rgba(58, 14, 32, 0.2);
+}
+
+.keynoteList li:hover::after {
+    width: 100%;
+}
+
+/* Floating animation for individual items */
+.keynoteList li:nth-child(odd) {
+    animation: fadeInSlide 0.8s ease-out both, floatUp 4s ease-in-out infinite;
+}
+
+.keynoteList li:nth-child(even) {
+    animation: fadeInSlide 0.8s ease-out both, floatDown 4s ease-in-out infinite;
+}
+
+/* Enhanced Animations */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(60px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateX(-50px) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes expandWidth {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100px;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        left: -100%;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradientSlide {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes floatUp {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+@keyframes floatDown {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(3px);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .keynoteSection {
+        padding: 10px;
+        min-height: auto;
+    }
+
+    .keynoteContainer {
+        padding: 40px 25px;
+        margin: 20px 0;
+    }
+
+    .keynoteTitle {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+
+    .keynoteUnderline {
+        width: 80px;
+        margin-bottom: 30px;
+    }
+
+    .keynoteList {
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+
+    .keynoteList li {
+        margin: 20px 0;
+        padding: 20px 0;
+        font-size: 1rem;
+    }
+
+    .keynoteList li:hover {
+        transform: translateX(15px) scale(1.01);
+    }
+
+    .keynoteList li::before {
+        left: -15px;
+        width: 6px;
+        height: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .keynoteContainer {
+        padding: 30px 20px;
+        margin: 10px 0;
+    }
+
+    .keynoteTitle {
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+
+    .keynoteUnderline {
+        width: 60px;
+        height: 3px;
+        margin-bottom: 25px;
+    }
+
+    .keynoteList {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .keynoteList li {
+        margin: 15px 0;
+        padding: 18px 0;
+        font-size: 0.9rem;
+    }
+
+    .keynoteList li:hover {
+        transform: translateX(10px);
+    }
+
+    .keynoteList li::before {
+        left: -10px;
+        width: 5px;
+        height: 5px;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .keynotePage {
+        background: white !important;
+    }
+
+    .keynoteTitle {
+        background: linear-gradient(135deg, #3a0e20, #6b1f3a, #8b2f50);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .keynoteList {
+        color: #2c3e50;
+    }
+
+    .keynoteList li {
+        color: #2c3e50;
+    }
+
+    .keynoteList li:hover {
+        color: #3a0e20;
+    }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+    .keynoteList li:nth-child(odd),
+    .keynoteList li:nth-child(even) {
+        animation: fadeInSlide 0.8s ease-out both;
+    }
+
+    .keynoteTitle {
+        animation: fadeInDown 1s ease-out 0.2s both;
+    }
+
+    .keynoteUnderline {
+        animation: expandWidth 1s ease-out 0.4s both;
+    }
+
+    .keynoteUnderline::after {
+        animation: none;
+    }
+}
+
+/* Focus states for accessibility */
+.keynoteList li:focus-within {
+    outline: 3px solid #3a0e20;
+    outline-offset: 2px;
+    transform: translateX(25px) scale(1.02);
+}
+
+.keynoteList li:focus-within::before {
+    transform: translateY(-50%) scale(1.5);
+    left: -15px;
+}
+
+.keynoteList li:focus-within::after {
+    width: 100%;
+}
