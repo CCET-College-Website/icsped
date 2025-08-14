@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "./components/header/header.jsx";
+import Footer from "./components/footer/footer.jsx";
 import "./App.css";
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
             <div className="main-content">
                 <Outlet />
             </div>
+            <Footer />
         </div>
     );
 }
