@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400&display=swap');
+
+@keyframes scroll {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.marquee-container {
+    width: 100%;
+    background-color: #4A0638;
+    color: white;
+    padding: 12px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    font-size: 16px;
+    font-family: 'Caladea', serif;
+    font-weight: 400;
+    z-index: 10;
+}
+
+.scrolling-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 30s linear infinite;
+}
+
+.marquee-container:hover .scrolling-text {
+    animation-play-state: paused;
+}
+
+.separator {
+    margin: 0 40px;
+    color: #FFD700;
+    font-weight: bold;
+}
+
+.highlight-text {
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.link-text {
+    color: #87CEEB;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .marquee-container {
+        font-size: 14px;
+    }
+
+    .separator {
+        margin: 0 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .marquee-container {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+
+    .separator {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .marquee-container {
+        font-size: 11px;
+    }
+
+    .separator {
+        margin: 0 15px;
+    }
+}

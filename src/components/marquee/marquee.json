@@ -1,0 +1,36 @@
+{
+  "importantDates": {
+    "icon": "📅",
+    "title": "Important Dates",
+    "dates": [
+      { "event": "Submission of Full-Length Paper", "date": "9th September 2025" },
+      { "event": "Paper Acceptance Notification", "date": "9th November 2025" },
+      { "event": "Submission of Final Version of Paper", "date": "30th November 2025" },
+      { "event": "Registration Deadline (Early Bird)", "date": "10th December 2025" },
+      { "event": "Registration Deadline (Late)", "date": "30th December 2025" }
+    ]
+  },
+  "submission": {
+    "icon": "🔗",
+    "title": "Submission Link",
+    "url": "https://icsped-2026.edas.info/login.php?rurl=aHR0cHM6Ly9pY3NwZWQtMjAyNi5lZGFzLmluZm8v",
+    "displayText": "icsped-2026.edas.info"
+  },
+  "conference": {
+    "icon": "📍",
+    "title": "Conference Date",
+    "date": "Tentative",
+    "venue": ""
+  },
+  "contact": {
+    "icon": "📧",
+    "title": "Contact",
+    "email": "anilrose@ccet.ac.in",
+    "phone": ""
+  },
+  "settings": {
+    "animationDuration": "30s",
+    "separator": "●",
+    "pauseOnHover": true
+  }
+}
