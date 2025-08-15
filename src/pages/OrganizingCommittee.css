@@ -1,0 +1,81 @@
+/* OrganizingCommittee.css */
+
+.committee-section {
+  padding: 50px 20px;
+  background-color: #f5f5f5; /* Light gray background for the section */
+  font-family: "Arial", sans-serif;
+}
+
+.committee-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.committee-block {
+  background-color: #fff;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.committee-heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0077b6; /* underline style */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.committee-block h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.committee-block p,
+.committee-block li {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.committee-block ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.committee-block ul.long-list {
+  max-height: 500px; /* limit height for long lists */
+  overflow-y: auto; /* scroll if content is long */
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+.committee-block ul li {
+  margin-bottom: 8px;
+}
+
+/* Scrollbar styling for long lists */
+.committee-block ul.long-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.committee-block ul.long-list::-webkit-scrollbar-thumb {
+  background-color: #0077b6;
+  border-radius: 4px;
+}
+
+.committee-block ul.long-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}

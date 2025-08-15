@@ -5,10 +5,10 @@ import "./App.css";
 
 export default function App() {
     return (
-        <div>
+        <div style={{ width: '100%', margin: 0, padding: 0, position: 'relative' }}>
             <Header />
-            <div style={{ paddingTop: "80px" }}>
-            <Outlet />
+            <div className="main-content">
+                <Outlet />
             </div>
         </div>
     );

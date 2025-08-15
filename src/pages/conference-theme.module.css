@@ -1,0 +1,127 @@
+.conferenceContainer {
+  display: flex;
+  width: 100%;
+  background: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #5E0847;
+  flex-wrap: wrap; /* allow wrapping on small screens */
+}
+.conferenceContainer{
+  box-shadow : 0 8px 30px rgba(0, 0, 0, 0.18);
+}
+.contentSection,
+.imageSection {
+  flex: 1 1 50%; /* allow resizing */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.textContent {
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.8s ease-out;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.mainTitle {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #5E0847;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.titleUnderline {
+  width: 60px;
+  height: 4px;
+  background-color: #5E0847;
+  margin: 0 auto 2rem auto;
+  border-radius: 2px;
+}
+
+.subtitle {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #5E0847;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+  border: 3px solid #5E0847;
+  box-sizing: border-box;
+}
+
+/* ---------------- Responsive Styles ---------------- */
+
+/* Medium Tablets */
+@media (max-width: 1024px) {
+  .mainTitle {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  .contentSection,
+  .imageSection {
+    padding: 1rem;
+  }
+}
+
+/* Small Tablets & Large Phones */
+@media (max-width: 768px) {
+  .conferenceContainer {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  .contentSection,
+  .imageSection {
+    flex: 1 1 100%;
+    padding: 0.5rem;
+  }
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+  .subtitle {
+    font-size: 0.9rem;
+  }
+  .titleUnderline {
+    width: 40px;
+    height: 2px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .contentSection,
+  .imageSection {
+    padding: 0.3rem;
+  }
+  .mainTitle {
+    font-size: 1.4rem;
+  }
+  .subtitle {
+    font-size: 0.8rem;
+  }
+  .titleUnderline {
+    width: 30px;
+    height: 1.5px;
+  }
+}
