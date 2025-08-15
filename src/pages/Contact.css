@@ -1,0 +1,156 @@
+/* Wrapper */
+.ct-section {
+  padding: 24px 16px;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading + underline */
+.ct-section-title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.ct-section-title h2 {
+  margin: 0;
+  font-family: "Times New Roman", serif;
+  font-size: clamp(18px, 2.2vw, 28px);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #111;
+}
+.ct-underline {
+  width: 48px;
+  height: 3px;
+  background: #6b0023;
+  border-radius: 2px;
+  margin: 8px auto 0;
+}
+
+/* Map wrap */
+.ct-map-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 48px; /* space for overlap */
+}
+.ct-map {
+  width: min(100%, 1100px);
+  height: 420px;
+  border: 0;
+  border-radius: 12px;
+}
+
+/* Unified card with info + form */
+.ct-unified-card {
+  position: absolute;
+  left: 50%;
+  bottom: -300px; 
+  transform: translateX(-50%);
+  width: min(92%, 900px);
+  background: #edecec;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  padding: 20px 22px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* Info section */
+.ct-info-grid {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.ct-info-col {
+  flex: 1;
+  min-width: 280px;
+  font-family: "Times New Roman", serif;
+
+}
+.ct-info-heading {
+  font-weight: 700;
+  font-size: 14px;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.ct-info-row {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  color: #222;
+  line-height: 1.45;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+.ct-icon {
+  font-size: 16px;
+  line-height: 1;
+  margin-top: 2px;
+  flex: 0 0 auto;
+}
+.ct-link {
+  color: #6b0023;
+  text-decoration: none;
+}
+.ct-link:hover { text-decoration: underline; }
+
+/* Form inside card */
+.ct-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.ct-form-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.ct-input,
+.ct-textarea {
+  flex: 1;
+  min-width: 240px;
+  background-color: #fff;
+  border: 1px solid #faf8f8;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  outline: none;
+}
+.ct-input:focus,
+.ct-textarea:focus {
+  border-color: #6b0023;
+  box-shadow: 0 0 0 2px rgba(208, 204, 205, 0.12);
+}
+.ct-textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+.ct-btn {
+  align-items: center;
+  background: #6b0023;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.ct-btn:hover { background: #50001a; }
+@media (max-width: 600px) {
+  /* Adjust address font size */
+  .ct-info-col:nth-child(2) span {
+    font-size: 13px;
+  }
+
+  /* Stack info columns vertically */
+  .ct-info-grid {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
