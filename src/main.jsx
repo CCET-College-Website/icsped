@@ -15,6 +15,7 @@ import ConferenceTracks from "./pages/ConferenceTracks";
 import AdvisoryCommittee from "./pages/AdvisoryCommittee.jsx";
 import Keynotes from "./pages/Keynotes.jsx";
 import Contact from "./pages/Contact";
+import Impdate from "./pages/Impdate";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -24,7 +25,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="theme" element={<ConferenceTheme />} />
-          <Route path="dates" element={<NoPage />} />
+          <Route path="dates" element={<Impdate />} />
           <Route path="advisory-committee" element={<AdvisoryCommittee />} />
           <Route path="organising-committee" element={<OrganizingCommittee />} />
           <Route path="keynote-speakers" element={<Keynotes />} />

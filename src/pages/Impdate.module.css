@@ -1,4 +1,4 @@
-.impdate-page {
+.impdatePage {
   font-family: 'Times New Roman', serif;
   background-color: white;
   min-height: 100vh;
@@ -8,52 +8,296 @@
   align-items: center;
   padding: 80px 20px;
   color: black;
+  animation: fadeIn 0.8s ease-out;
+  box-sizing: border-box;
 }
 
-.impdate-title {
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.impdateTitle {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 8px;
   text-align: center;
+  opacity: 0;
+  animation: slideInFromTop 1s ease-out 0.3s forwards;
 }
 
-.impdate-underline {
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.impdateUnderline {
   width: 50px;
   height: 3px;
   background-color: #5c1248;
-  margin-top: 20px; 
+  margin-top: 20px;
   margin-bottom: 40px;
+  opacity: 0;
+  animation: expandWidth 0.8s ease-out 0.6s forwards;
 }
 
-.impdate-table {
-  border-collapse: collapse;
+@keyframes expandWidth {
+  from {
+    opacity: 1;
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    width: 50px;
+  }
+}
+
+.impdateTable {
+  border-collapse: separate;
+  border-spacing: 0;
   font-size: 1rem;
   background: white;
   width: 100%;
   max-width: 800px;
+  opacity: 0;
+  animation: slideInFromBottom 1s ease-out 0.9s forwards;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
 }
 
-.impdate-table td {
-  border: 1px solid #ccc;
-  padding: 10px 20px;
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.impdateTable td {
+  border: none;
+  border-bottom: 1px solid #f1f3f4;
+  padding: 18px 24px;
   text-align: left;
   vertical-align: middle;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
-.impdate-table .bold {
-  font-weight: bold;
+.impdateTable td:first-child {
+  font-weight: 600;
+  color: #1f2937;
+  background: linear-gradient(135deg, #fafbfc 0%, #f8fafc 100%);
+  border-right: 3px solid #5c1248;
+  width: 60%;
 }
 
-.impdate-table tr:nth-child(even) {
-  background-color: #f9f9f9; /* zebra stripes */
+.impdateTable td:last-child {
+  font-weight: 500;
+  color: #5c1248;
+  background: white;
+  text-align: right;
+  font-size: 1.05em;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-  .impdate-table {
-    font-size: 0.9rem;
+.impdateTable .bold {
+  font-weight: 600;
+}
+
+.impdateTable tr:last-child td {
+  border-bottom: none;
+}
+
+.impdateTable tr {
+  transition: all 0.3s ease;
+  transform: translateX(0);
+}
+
+.impdateTable tr:hover {
+  background: linear-gradient(135deg, #f8f9ff 0%, #f1f5ff 100%);
+  transform: translateX(8px) scale(1.01);
+  box-shadow: 0 4px 20px rgba(92, 18, 72, 0.08);
+}
+
+.impdateTable tr:hover td:first-child {
+  background: linear-gradient(135deg, #f0f4ff 0%, #e8f2ff 100%);
+  color: #5c1248;
+  border-right-color: #7c2d5a;
+  border-right-width: 4px;
+}
+
+.impdateTable tr:hover td:last-child {
+  color: #5c1248;
+  font-weight: 600;
+}
+
+/* Staggered row animation */
+.impdateTable tr:nth-child(1) {
+  animation: slideInRow 0.6s ease-out 1.2s both;
+}
+
+.impdateTable tr:nth-child(2) {
+  animation: slideInRow 0.6s ease-out 1.35s both;
+}
+
+.impdateTable tr:nth-child(3) {
+  animation: slideInRow 0.6s ease-out 1.5s both;
+}
+
+.impdateTable tr:nth-child(4) {
+  animation: slideInRow 0.6s ease-out 1.65s both;
+}
+
+.impdateTable tr:nth-child(5) {
+  animation: slideInRow 0.6s ease-out 1.8s both;
+}
+
+@keyframes slideInRow {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
   }
-  .impdate-table td {
-    padding: 8px 10px;
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .impdatePage {
+    padding: 40px 15px;
+  }
+
+  .impdateTitle {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .impdateUnderline {
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+
+  .impdateTable {
+    font-size: 0.9rem;
+    border-radius: 8px;
+    max-width: 100%;
+  }
+
+  .impdateTable tr {
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    background: white;
+    border: 1px solid #e5e7eb;
+  }
+
+  .impdateTable tr:last-child {
+    margin-bottom: 0;
+  }
+
+  .impdateTable td {
+    display: block;
+    width: 100% !important;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #f1f3f4;
+  }
+
+  .impdateTable td:first-child {
+    background: linear-gradient(135deg, #fafbfc 0%, #f8fafc 100%);
+    border-right: none;
+    border-bottom: 2px solid #5c1248;
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: #1f2937;
+  }
+
+  .impdateTable td:last-child {
+    background: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #5c1248;
+    padding: 16px 20px;
+  }
+
+  /* Override the desktop rule that removes border-bottom from last row */
+  .impdateTable tr:last-child td:last-child {
+    border-bottom: 1px solid #f1f3f4;
+  }
+
+  /* Ensure the last row's first cell (heading) keeps its purple underline */
+  .impdateTable tr:last-child td:first-child {
+    border-bottom: 2px solid #5c1248;
+  }
+
+  .impdateTable tr:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 24px rgba(92, 18, 72, 0.12);
+  }
+
+  .impdateTable tr:hover td:first-child {
+    background: linear-gradient(135deg, #f0f4ff 0%, #e8f2ff 100%);
+    border-bottom-color: #7c2d5a;
+    border-bottom-width: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .impdatePage {
+    padding: 30px 10px;
+  }
+
+  .impdateTitle {
+    font-size: 1.3rem;
+  }
+
+  .impdateTable {
+    font-size: 0.85rem;
+  }
+
+  .impdateTable td:first-child {
+    font-size: 0.9rem;
+    padding: 14px 16px;
+  }
+
+  .impdateTable td:last-child {
+    font-size: 1rem;
+    padding: 14px 16px;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .impdatePage,
+  .impdateTitle,
+  .impdateUnderline,
+  .impdateTable,
+  .impdateTable tr {
+    animation: none;
+    opacity: 1;
+  }
+
+  .impdateTable tr:hover {
+    transform: none;
   }
 }
