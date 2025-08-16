@@ -145,6 +145,7 @@
     font-size: 18px;
     text-align: center;
     word-spacing: normal;
+    margin-bottom: 30px;
   }
 
   .about-ccet-section {
@@ -159,6 +160,7 @@
 
   .about-ccet-content h2 {
     font-size: 2rem;
+    text-align: center;
   }
 }
 
