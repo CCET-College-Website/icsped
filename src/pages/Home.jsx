@@ -10,6 +10,9 @@ export default function Home() {
                 <div className="background-section">
                     <img className="background-img" src={backgroundImg} alt="Background" />
                 </div>
+                <div className="mobile-marquee">
+                    <ConferenceMarquee />
+                </div>
                 <div className="animated-card card">
                     <div className="main-title">
                         International <br/>
@@ -28,7 +31,9 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <ConferenceMarquee />
+            <div className="desktop-marquee">
+                <ConferenceMarquee />
+            </div>
         </>
     );
 }

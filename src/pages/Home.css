@@ -106,6 +106,14 @@
     color: #4A0638;
 }
 
+.mobile-marquee {
+    display: none;
+}
+
+.desktop-marquee {
+    display: block;
+}
+
 @media (max-width: 1024px) and (min-width: 769px) {
     .card {
         width: min(450px, 85vw);
@@ -121,65 +129,38 @@
     }
 }
 
-@media (max-width: 768px) and (min-width: 481px) {
-    .home-container {
-        align-items: flex-start;
-        padding: 20px 0;
-        flex-direction: column;
-    }
-
-    .background-section {
-        height: 48%;
-        position: relative;
-    }
-
-    .card {
+@media (max-width: 768px) {
+    .mobile-marquee {
+        display: block;
         width: 100%;
-        margin: 0;
-        margin-top: 0;
-        padding: 15px;
-        border-radius: 0;
         position: relative;
-        flex: 1;
-        min-height: auto;
+        z-index: 2;
+        margin-top: -30px;
     }
 
-    .main-title {
-        font-size: 23px;
-        margin-bottom: 20px;
-        text-align: center;
-        line-height: 1.25;
+    .desktop-marquee {
+        display: none;
     }
 
-    .date-text {
-        margin-top: 0.3em;
-    }
-
-    .accent-line {
-        width: 100px;
-        margin: 0 auto 20px auto;
-    }
-
-    .organizer-info {
-        font-size: 15.7px;
-        text-align: center;
-        line-height: 1.25;
-    }
-}
-
-@media (max-width: 480px) {
     .home-container {
         align-items: flex-start;
         padding: 0;
         flex-direction: column;
+        margin-bottom: -350px;
     }
 
     .background-section {
         height: 48%;
         position: relative;
+        order: 1;
+    }
+
+    .mobile-marquee {
+        order: 2;
     }
 
     .card {
+        order: 3;
         width: 100%;
         margin: 0;
         padding: 15px;
@@ -187,6 +168,7 @@
         position: relative;
         flex: 1;
         min-height: auto;
+        margin-bottom: 350px;
     }
 
     .main-title {
@@ -271,6 +253,14 @@
     .organizer-info {
         font-size: clamp(14px, 2.5vw, 18px);
         text-align: left;
+    }
+
+    .mobile-marquee {
+        display: none;
+    }
+
+    .desktop-marquee {
+        display: block;
     }
 }
 
