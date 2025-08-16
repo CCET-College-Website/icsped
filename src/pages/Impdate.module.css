@@ -240,12 +240,10 @@
     padding: 16px 20px;
   }
 
-  /* Override the desktop rule that removes border-bottom from last row */
   .impdateTable tr:last-child td:last-child {
     border-bottom: 1px solid #f1f3f4;
   }
 
-  /* Ensure the last row's first cell (heading) keeps its purple underline */
   .impdateTable tr:last-child td:first-child {
     border-bottom: 2px solid #5c1248;
   }
@@ -286,7 +284,6 @@
   }
 }
 
-/* Reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
   .impdatePage,
   .impdateTitle,
