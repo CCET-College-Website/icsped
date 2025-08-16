@@ -2,6 +2,7 @@
 .ct-section {
   padding: 24px 16px;
   font-family: Arial, sans-serif;
+  padding-bottom: 350px;
 }
 
 /* Heading + underline */
@@ -32,7 +33,8 @@
   display: flex;
   justify-content: center;
   margin-top: 8px;
-  margin-bottom: 48px; /* space for overlap */
+  /* Increase bottom margin to accommodate the card */
+  margin-bottom: 320px;
 }
 .ct-map {
   width: min(100%, 1100px);
@@ -45,7 +47,8 @@
 .ct-unified-card {
   position: absolute;
   left: 50%;
-  bottom: -300px; 
+  /* Reduce the negative bottom value */
+  bottom: -280px;
   transform: translateX(-50%);
   width: min(92%, 900px);
   background: #edecec;
@@ -58,7 +61,6 @@
   gap: 20px;
 }
 
-
 /* Info section */
 .ct-info-grid {
   display: flex;
@@ -70,7 +72,6 @@
   flex: 1;
   min-width: 280px;
   font-family: "Times New Roman", serif;
-
 }
 .ct-info-heading {
   font-weight: 700;
@@ -142,7 +143,28 @@
   cursor: pointer;
 }
 .ct-btn:hover { background: #50001a; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ct-section {
+    /* Adjust bottom padding for mobile */
+    padding-bottom: 380px;
+  }
+
+  .ct-map-wrap {
+    margin-bottom: 350px;
+  }
+
+  .ct-unified-card {
+    bottom: -320px;
+  }
+}
+
 @media (max-width: 600px) {
+  .ct-section {
+    padding-bottom: 420px;
+  }
+
   /* Adjust address font size */
   .ct-info-col:nth-child(2) span {
     font-size: 13px;
@@ -152,5 +174,27 @@
   .ct-info-grid {
     flex-direction: column;
     gap: 12px;
+  }
+
+  .ct-map-wrap {
+    margin-bottom: 380px;
+  }
+
+  .ct-unified-card {
+    bottom: -350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ct-section {
+    padding-bottom: 450px;
+  }
+
+  .ct-map-wrap {
+    margin-bottom: 400px;
+  }
+
+  .ct-unified-card {
+    bottom: -370px;
   }
 }
