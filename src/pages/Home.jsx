@@ -1,6 +1,9 @@
 import React from 'react';
 import backgroundImg from '../assets/home/background.svg';
 import ConferenceMarquee from '../components/marquee/marquee';
+import ConferenceTheme from './conference-theme';
+import Impdate from './Impdate';
+import Contact from './Contact';
 import './Home.css';
 
 export default function Home() {
@@ -33,6 +36,17 @@ export default function Home() {
             </div>
             <div className="desktop-marquee">
                 <ConferenceMarquee />
+            </div>
+
+            {/* Added components with animations */}
+            <div className="section-container fade-in-section">
+                <ConferenceTheme />
+            </div>
+            <div className="section-container slide-in-section">
+                <Impdate />
+            </div>
+            <div className="section-container fade-in-section">
+                <Contact />
             </div>
         </>
     );

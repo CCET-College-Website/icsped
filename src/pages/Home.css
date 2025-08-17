@@ -11,9 +11,43 @@
     }
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .animated-card {
     animation: slideInLeft 1s ease-out;
 }
+
+.fade-in-section {
+    animation: fadeIn 1s ease-out both;
+}
+
+.slide-in-section {
+    animation: slideInUp 1s ease-out both;
+}
+
+.section-container {
+    margin: 60px 0;
+    width: 100%;
+}
+
 
 .home-container {
     width: 100%;
@@ -114,6 +148,19 @@
     display: block;
 }
 
+/* Animation delays for cascading effect */
+.fade-in-section:nth-of-type(1) {
+    animation-delay: 0.2s;
+}
+
+.slide-in-section {
+    animation-delay: 0.4s;
+}
+
+.fade-in-section:nth-of-type(2) {
+    animation-delay: 0.6s;
+}
+
 @media (max-width: 1500px) and (min-width: 769px) {
     .desktop-marquee {
         margin-top: -10px;
@@ -130,6 +177,11 @@
 
     .organizer-info {
         font-size: clamp(20px, 3vw, 22px);
+    }
+
+    .section-container {
+        margin-bottom: 100px;
+        margin-top: -70px;
     }
 }
 
@@ -198,6 +250,23 @@
         border-top-width: 6px;
         margin: 0 auto 20px auto;
     }
+
+    .section-container {
+        margin: 40px 0;
+    }
+
+    /* Adjust animation delays for mobile */
+    .fade-in-section:nth-of-type(1) {
+        animation-delay: 0.1s;
+    }
+
+    .slide-in-section {
+        animation-delay: 0.2s;
+    }
+
+    .fade-in-section:nth-of-type(2) {
+        animation-delay: 0.3s;
+    }
 }
 
 @media (max-width: 360px) {
@@ -216,6 +285,10 @@
 
     .accent-line {
         width: 80px;
+    }
+
+    .section-container {
+        margin: 30px 0;
     }
 }
 
