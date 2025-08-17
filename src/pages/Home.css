@@ -114,9 +114,9 @@
     display: block;
 }
 
-@media (max-width: 1290px) and (min-width: 769px) {
+@media (max-width: 1500px) and (min-width: 769px) {
     .desktop-marquee {
-        margin-top: 5px;
+        margin-top: -10px;
     }
 
     .card {
