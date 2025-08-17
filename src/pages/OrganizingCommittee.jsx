@@ -346,11 +346,11 @@ const OrganizingCommittee = () => {
             Technology, Patiala, India
           </li>
           <li>
-            Prof. Sunil K Singh, Professor, University Institute of Engineering
-            and Technology, Chandigarh
+            Prof. Sunil K Singh, Professor, Chandigarh College of Engineering
+            and Technology, Chandigarh, India
           </li>
           <li>
-            Prof. Arun Singh, Professor, Panjab Engineering College, Chandigarh
+            Prof. Arun Singh, Professor, Panjab Engineering College, Chandigarh, India
           </li>
           <li>
             Dr. Sarita Sharma, Chandigarh College of Engineering and Technology,
