@@ -3,6 +3,7 @@ import styles from "./conference-theme.module.css";
 
 function ConferenceTheme() {
   return (
+      <div className={`main-content ${styles.themeWrapper}`}>
     <div className={styles.conferenceContainer}>
       <div className={styles.contentSection}>
         <div className={styles.textContent}>
@@ -45,6 +46,7 @@ function ConferenceTheme() {
         </svg>
       </div>
     </div>
+      </div>
   );
 }
 
