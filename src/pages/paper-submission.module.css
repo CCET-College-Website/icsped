@@ -1,0 +1,270 @@
+/* Main container styles */
+.container {
+  min-height: 100vh;
+  background-image: url('../assets/papersubmission/submission_bg.jpg'); /* Update path as needed */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 50rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Main card styles */
+.card {
+  background: rgba(94, 8, 71, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+  }
+}
+
+/* Background decorations */
+.bgDecoration1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12rem;
+  height: 12rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  transform: translate(6rem, -6rem);
+}
+
+.bgDecoration2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10rem;
+  height: 10rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  transform: translate(-5rem, 5rem);
+}
+
+.contentWrapper {
+  position: relative;
+  z-index: 10;
+}
+
+/* Header styles */
+.headerSection {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.iconContainer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  color: white;
+}
+
+.mainTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .mainTitle {
+    font-size: 2.75rem;
+  }
+}
+
+.titleDivider {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 0 auto;
+  border-radius: 9999px;
+}
+
+/* Content styles */
+.contentSection {
+  text-align: center;
+}
+
+.contentItem {
+  margin-bottom: 1.25rem;
+}
+
+.mainDescription {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.6;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .mainDescription {
+    font-size: 1.2rem;
+  }
+}
+
+/* Format info card */
+.formatInfoCard {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.formatHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.formatIcon {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 0.5rem;
+  color: white;
+}
+
+.formatTitle {
+  font-weight: 600;
+  color: white;
+}
+
+.formatDescription {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+}
+
+/* Submission button */
+.submissionSection {
+  padding-top: 0.75rem;
+}
+
+.submissionButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: white;
+  color: #5e0847;
+  padding: 0.875rem 1.75rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+.submissionButton:hover {
+  background-color: #f8f9fa;
+  box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.25);
+  transform: translateY(-0.125rem);
+}
+
+.buttonIcon {
+  width: 1.1rem;
+  height: 1.1rem;
+  color: #5e0847;
+}
+
+/* Additional info */
+.additionalInfo {
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .container {
+    padding: 0.75rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .mainTitle {
+    font-size: 2rem;
+  }
+
+  .mainDescription {
+    font-size: 1rem;
+  }
+
+  .formatInfoCard {
+    padding: 1rem;
+  }
+
+  .submissionButton {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    max-width: 100%;
+  }
+
+  .card {
+    padding: 1.25rem;
+  }
+
+  .headerSection {
+    margin-bottom: 1.5rem;
+  }
+
+  .contentItem {
+    margin-bottom: 1rem;
+  }
+}
