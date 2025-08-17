@@ -2,7 +2,7 @@
 .ct-section {
   padding: 24px 16px;
   font-family: Arial, sans-serif;
-  padding-bottom: 350px;
+  padding-bottom: 300px;
 }
 
 /* Heading + underline */
@@ -145,10 +145,26 @@
 .ct-btn:hover { background: #50001a; }
 
 /* Responsive adjustments */
+@media (min-width: 1024px) {
+  .ct-section {
+    margin-bottom: -150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ct-section {
+    margin-bottom: -300px;
+  }
+}
+
 @media (max-width: 768px) {
   .ct-section {
     /* Adjust bottom padding for mobile */
     padding-bottom: 380px;
+  }
+
+  .ct-section-title {
+    margin-top: 16px;
   }
 
   .ct-map-wrap {
@@ -163,6 +179,10 @@
 @media (max-width: 600px) {
   .ct-section {
     padding-bottom: 420px;
+  }
+
+  .ct-section-title {
+    margin-top: 16px;
   }
 
   /* Adjust address font size */
@@ -188,6 +208,11 @@
 @media (max-width: 480px) {
   .ct-section {
     padding-bottom: 450px;
+    margin-bottom: -350px;
+  }
+
+  .ct-section-title {
+    margin-top: 16px;
   }
 
   .ct-map-wrap {

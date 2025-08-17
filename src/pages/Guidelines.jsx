@@ -10,7 +10,7 @@ const AuthorGuidelines = () => {
 
       <div className="banner-section">
         <img
-          src="./public/Guidelines.png"
+          src="/Guidelines.png"
           alt="Guidelines banner with paper airplane and icons"
           className="banner-image"
         />

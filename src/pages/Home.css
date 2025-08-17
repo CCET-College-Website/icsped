@@ -84,7 +84,7 @@
 }
 
 .accent-line {
-    width: clamp(60px, 15vw, 150px);
+    width: clamp(60px, 15vw, 120px);
     height: 6px;
     border-top: 6px #4A0638 solid;
     margin-bottom: clamp(25px, 4vh, 35px);
@@ -114,7 +114,11 @@
     display: block;
 }
 
-@media (max-width: 1024px) and (min-width: 769px) {
+@media (max-width: 1290px) and (min-width: 769px) {
+    .desktop-marquee {
+        margin-top: 5px;
+    }
+
     .card {
         width: min(450px, 85vw);
         margin-left: clamp(30px, 5vw, 50px);
