@@ -94,7 +94,7 @@
 .title {
     margin: 0 0 1rem 0;
     font-size: 2.2em;
-    font-weight: 800;
+    font-weight: 900; /* Made even bolder */
     text-transform: uppercase;
     letter-spacing: 1.5px;
     line-height: 1;
@@ -120,10 +120,11 @@
 .description {
     margin: 0 0 1rem 0;
     font-size: 1rem;
-    color: #555;
+    color: #333; /* Dark grey color */
     line-height: 1.5;
     max-width: 400px;
-    font-weight: 400;
+    font-weight: 700; /* Made bold */
+    text-shadow: 0 1px 2px rgba(51, 51, 51, 0.1); /* Updated text shadow to match dark grey */
 }
 
 .copyright {
@@ -369,6 +370,7 @@
     .description {
         font-size: 0.95rem;
         margin-bottom: 0.8rem;
+        font-weight: 700; /* Ensure bold on mobile too */
     }
 
     .sectionTitle {
