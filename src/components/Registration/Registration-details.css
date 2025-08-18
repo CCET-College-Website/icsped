@@ -108,9 +108,9 @@ th {
 /* Desktop styling for .conditions */
 @media screen and (min-width: 769px) {
   .conditions {
-    list-style: none; /* Remove bullets */
-    text-align: center; /* Center text */
-    padding-left: 0; /* Remove extra indentation */
+    list-style: disc; /* Remove bullets */
+    text-align: left; /* Center text */
+    padding-left: 20px; /* Remove extra indentation */
   }
   .conditions li {
     margin-bottom: 6px; /* Optional spacing between lines */
