@@ -48,6 +48,28 @@
     width: 100%;
 }
 
+.logo-overlay {
+    position: absolute;
+    top: -65px;
+    right: -70px;
+    width: 300px;
+    height: 300px;
+    transform: scale(0.4);
+    z-index: 2;
+    backdrop-filter: blur(8px);
+    margin-top: -10px;
+}
+
+.ieee-logo {
+    position: absolute;
+    top: 10px;
+    margin-top: 20px;
+    right: 200px;
+    width: 190px; /* Adjust size as needed */
+    transform: scale(1.5);
+    z-index: 2;
+    backdrop-filter: blur(3px);
+}
 
 .home-container {
     width: 100%;
@@ -90,7 +112,7 @@
     background: #F9F9F9;
     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
     z-index: 1;
-    padding: clamp(30px, 5vw, 45px);
+    padding: clamp(30px, 1vw, 45px);
     box-sizing: border-box;
     border-radius: 8px;
 }
@@ -100,9 +122,9 @@
     position: relative;
     color: black;
     font-size: clamp(28px, 3.5vw, 48px);
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'georgia', sans-serif;
     font-style: italic;
-    font-weight: 100;
+    font-weight: 500;
     line-height: 1.25;
     word-wrap: break-word;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.00);
@@ -115,6 +137,8 @@
     font-weight: 700;
     color: #4A0638;
     font-style: normal;
+    font-size: clamp(28px, 2.5vw, 48px);
+    font-family: 'Merriweather', sans-serif;
 }
 
 .accent-line {
@@ -182,7 +206,7 @@
 
     .section-container {
         margin-bottom: 100px;
-        margin-top: -70px;
+        margin-top: -80px;
     }
 }
 
@@ -193,6 +217,27 @@
         position: relative;
         z-index: 2;
         margin-top: -30px;
+    }
+
+    .logo-overlay {
+        position: absolute;
+        top: 20px;
+        left: 0px;
+        width: 40px;
+        height: 40px;
+        transform: scale(0.25);
+        z-index: 2;
+    }
+
+    .ieee-logo {
+        position: absolute;
+        top: 20px;
+        margin-top: -10px;
+        right: -20px;
+        width: 190px; /* Adjust size as needed */
+        transform: scale(0.7);
+        z-index: 2;
+        backdrop-filter: blur(3px);
     }
 
     .desktop-marquee {

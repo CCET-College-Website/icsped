@@ -4,6 +4,8 @@ import ConferenceMarquee from '../components/marquee/marquee';
 import ConferenceTheme from './conference-theme';
 import Impdate from './Impdate';
 import Contact from './Contact';
+import CCET_Logo from '../components/home/CCET_Logo';
+import IEEE_Logo from '../components/home/IEEE_Logo';
 import './Home.css';
 
 export default function Home() {
@@ -12,6 +14,12 @@ export default function Home() {
             <div className="home-container">
                 <div className="background-section">
                     <img className="background-img" src={backgroundImg} alt="Background" />
+                    <div className="logo-overlay">
+                        <CCET_Logo />
+                    </div>
+                    <div className="ieee-logo">
+                        <IEEE_Logo />
+                    </div>
                 </div>
                 <div className="mobile-marquee">
                     <ConferenceMarquee />
@@ -27,10 +35,13 @@ export default function Home() {
                     <div className="accent-line"></div>
                     <div className="organizer-info">
                         <span className="organized-by">Organised by:</span><br/>
+                        <strong>
                         Department of Electronics and <br/>
                         Communication Engineering<br/>
-                        Chandigarh College of Engineering and <br/>
-                        Technology, Sector- 26, Chandigarh
+                        Chandigarh College of Engineering  <br/>
+                        and Technology <br/>
+                        Sector- 26, Chandigarh
+                        </strong>
                     </div>
                 </div>
             </div>

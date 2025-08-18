@@ -1,0 +1,88 @@
+/* Container styles */
+.logoContainer {
+    position: relative;
+    width: 200px;
+    height: 85px;
+}
+
+.logoSvg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes typeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Building animations */
+.pillar1 {
+    animation: fadeIn 0.3s ease-in forwards;
+    opacity: 0;
+}
+
+.pillar2 {
+    animation: fadeIn 0.3s ease-in forwards;
+    opacity: 0;
+    animation-delay: 0.3s;
+}
+
+.arc {
+    animation: fadeIn 0.3s ease-in forwards;
+    opacity: 0;
+    animation-delay: 0.6s;
+}
+
+/* Row animations */
+.r1 { animation: fadeIn 0.2s ease-in forwards; opacity: 0; animation-delay: 0.9s; }
+.r2 { animation: fadeIn 0.2s ease-in forwards; opacity: 0; animation-delay: 1.1s; }
+.r3 { animation: fadeIn 0.2s ease-in forwards; opacity: 0; animation-delay: 1.3s; }
+.r4 { animation: fadeIn 0.2s ease-in forwards; opacity: 0; animation-delay: 1.5s; }
+.r5 { animation: fadeIn 0.2s ease-in forwards; opacity: 0; animation-delay: 1.7s; }
+.r6 { animation: fadeIn 0.2s ease-in forwards; opacity: 0; animation-delay: 1.9s; }
+.r7 { animation: fadeIn 0.2s ease-in forwards; opacity: 0; animation-delay: 2.1s; }
+.r8 { animation: fadeIn 0.2s ease-in forwards; opacity: 0; animation-delay: 2.3s; }
+.sql2 { animation: fadeIn 0.2s ease-in forwards; opacity: 0; animation-delay: 2.5s; }
+.r9 { animation: fadeIn 0.2s ease-in forwards; opacity: 0; animation-delay: 2.7s; }
+.r10 { animation: fadeIn 0.2s ease-in forwards; opacity: 0; animation-delay: 2.9s; }
+.r11 { animation: fadeIn 0.2s ease-in forwards; opacity: 0; animation-delay: 3.1s; }
+.sql1 { animation: fadeIn 0.2s ease-in forwards; opacity: 0; animation-delay: 3.3s; }
+
+/* Square animations */
+.sq2a { animation: fadeIn 0.3s ease-in forwards; opacity: 0; animation-delay: 3.5s; }
+.sq1a { animation: fadeIn 0.3s ease-in forwards; opacity: 0; animation-delay: 3.7s; }
+.sq2b { animation: fadeIn 0.3s ease-in forwards; opacity: 0; animation-delay: 3.9s; }
+.sq1b { animation: fadeIn 0.3s ease-in forwards; opacity: 0; animation-delay: 4.1s; }
+
+/* Window animations */
+.w1 { animation: fadeIn 0.3s ease-in forwards; opacity: 0; animation-delay: 4.3s; }
+.w1a { animation: fadeIn 0.3s ease-in forwards; opacity: 0; animation-delay: 4.5s; }
+.w1b { animation: fadeIn 0.3s ease-in forwards; opacity: 0; animation-delay: 4.6s; }
+.w2a { animation: fadeIn 0.3s ease-in forwards; opacity: 0; animation-delay: 4.7s; }
+.w2b { animation: fadeIn 0.3s ease-in forwards; opacity: 0; animation-delay: 4.8s; }
+
+/* Character animations */
+.charI1 { animation: typeIn 0.1s ease-in forwards; opacity: 0; animation-delay: 5.0s; }
+.charE1 { animation: typeIn 0.1s ease-in forwards; opacity: 0; animation-delay: 5.1s; }
+.charE2 { animation: typeIn 0.1s ease-in forwards; opacity: 0; animation-delay: 5.2s; }
+.charE3 { animation: typeIn 0.1s ease-in forwards; opacity: 0; animation-delay: 5.3s; }
+
+.charD { animation: typeIn 0.1s ease-in forwards; opacity: 0; animation-delay: 5.6s; }
+.charE4 { animation: typeIn 0.1s ease-in forwards; opacity: 0; animation-delay: 5.7s; }
+.charL1 { animation: typeIn 0.1s ease-in forwards; opacity: 0; animation-delay: 5.8s; }
+.charH { animation: typeIn 0.1s ease-in forwards; opacity: 0; animation-delay: 5.9s; }
+.charI2 { animation: typeIn 0.1s ease-in forwards; opacity: 0; animation-delay: 6.0s; }
+.charSpace { animation: typeIn 0.1s ease-in forwards; opacity: 0; animation-delay: 6.1s; }
+.charS { animation: typeIn 0.1s ease-in forwards; opacity: 0; animation-delay: 6.2s; }
+.charE5 { animation: typeIn 0.1s ease-in forwards; opacity: 0; animation-delay: 6.3s; }
+.charC { animation: typeIn 0.1s ease-in forwards; opacity: 0; animation-delay: 6.4s; }
+.charT { animation: typeIn 0.1s ease-in forwards; opacity: 0; animation-delay: 6.5s; }
+.charI3 { animation: typeIn 0.1s ease-in forwards; opacity: 0; animation-delay: 6.6s; }
+.charO { animation: typeIn 0.1s ease-in forwards; opacity: 0; animation-delay: 6.7s; }
+.charN { animation: typeIn 0.1s ease-in forwards; opacity: 0; animation-delay: 6.8s; }
