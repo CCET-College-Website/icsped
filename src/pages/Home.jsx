@@ -17,7 +17,7 @@ export default function Home() {
                     <ConferenceMarquee />
                 </div>
                 <div className="animated-card card">
-                    <div className="main-title">
+                    <div className="main-title-main">
                         International <br/>
                         Conference on Signal <br/>
                         Processing & <br/>

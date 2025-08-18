@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 
 @keyframes slideInLeft {
     from {
@@ -95,14 +95,14 @@
     border-radius: 8px;
 }
 
-.main-title {
+.main-title-main {
     width: 100%;
     position: relative;
     color: black;
-    font-size: clamp(28px, 6vw, 48px);
-    font-family: 'Roboto', sans-serif;
+    font-size: clamp(28px, 3.5vw, 48px);
+    font-family: 'Merriweather', sans-serif;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 100;
     line-height: 1.25;
     word-wrap: break-word;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.00);
