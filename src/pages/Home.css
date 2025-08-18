@@ -161,7 +161,7 @@
     animation-delay: 0.6s;
 }
 
-@media (max-width: 1500px) and (min-width: 769px) {
+@media (max-width: 2040px) and (min-width: 769px) {
     .desktop-marquee {
         margin-top: -10px;
     }
@@ -169,6 +169,7 @@
     .card {
         width: min(450px, 85vw);
         margin-left: clamp(30px, 5vw, 50px);
+        background: rgba(255, 255, 255, 0.8);
     }
 
     .main-title {
