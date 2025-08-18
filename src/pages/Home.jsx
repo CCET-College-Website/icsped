@@ -33,6 +33,10 @@ export default function Home() {
                         <span className="date-text">23-24 January 2026</span>
                     </div>
                     <div className="accent-line"></div>
+                    <div className="tech-sponsored">
+                        <span className="sponsored-title">Technically Sponsored by</span><br/>
+                        <strong>IEEE</strong> <span className="conf-number">| Conference No: 65817</span>
+                    </div>
                     <div className="organizer-info">
                         <span className="organized-by">Organised by:</span><br/>
                         <strong>
