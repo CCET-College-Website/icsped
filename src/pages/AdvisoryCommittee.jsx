@@ -50,8 +50,8 @@ const AdvisoryCommittee = () => {
         },
         {
             name: "Dr. Tapas Chakravarty",
-            title: "Principal Scientist",
-            institution: "TCS Bangalore, India"
+            title: "Chief Scientist",
+            institution: "TCS Kolkata, India"
         },
         {
             name: "Sh. Vikas Trikha",

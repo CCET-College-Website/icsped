@@ -346,64 +346,6 @@ const OrganizingCommittee = () => {
             Technology, Patiala, India
           </li>
           <li>
-            Prof. Sunil K Singh, Professor, Chandigarh College of Engineering
-            and Technology, Chandigarh, India
-          </li>
-          <li>
-            Prof. Arun Singh, Professor, Panjab Engineering College, Chandigarh, India
-          </li>
-          <li>
-            Dr. Sarita Sharma, Chandigarh College of Engineering and Technology,
-            Chandigarh, India
-          </li>
-          <li>
-            Dr. Irfan Mohammad Khan, Chandigarh College of Engineering and
-            Technology, Chandigarh, India
-          </li>
-          <li>
-            Dr. Ritula Thakur, National Institute of Technical Teacher Training
-            and Research, Chandigarh
-          </li>
-          <li>Dr. Babban Kumar, CSIR-CSIO, Chandigarh, India</li>
-          <li>
-            Dr. Amar Partap Singh, Professor, Sant Longowal Institute of
-            Engineering and Technology, Longowal, Punjab, India
-          </li>
-          <li>Prof. Prerna Gaur, Director, WEST Campus NSUT, Delhi, India</li>
-          <li>
-            Prof. Arun Kumar, Panjab Engineering College, Chandigarh, India
-          </li>
-          <li>Prof. Tripti Sharma, Chandigarh University, Mohali, India</li>
-        </ul>
-      </div>
-
-      <div className="committee-block">
-        <h2 className="committee-heading">PUBLICITY COMMITTEE</h2>
-        <ul>
-          <h3>Chair(s):</h3>
-          <li>
-            Prof. Arun Khosla, Professor, Dr. B. R. Ambedkar National Institute
-            of Technology, Jalandhar, India
-          </li>
-          <li>Prof. Ghanshyam Singh, Professor, MNIT Jaipur, India</li>
-          <li>
-            Dr. Parvinder Kaur, Chandigarh College of Engineering and
-            Technology, Chandigarh, India
-          </li>
-          <li>
-            Dr. Vipin Balyan, Sr. Lecturer, Cape Peninsula University of
-            Technology, California
-          </li>
-
-          <h3>Member(s) - INDIA:</h3>
-          <li>
-            Dr. Victor Gambhir, Vice Chancellor, JERC University Gurugram, India
-          </li>
-          <li>
-            Prof. Rajesh Khanna, Professor, Thapar Institute of Engineering and
-            Technology, Patiala, India
-          </li>
-          <li>
             Prof. Sunil K Singh, Professor, University Institute of Engineering
             and Technology, Chandigarh
           </li>
