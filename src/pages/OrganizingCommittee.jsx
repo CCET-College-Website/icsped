@@ -22,7 +22,7 @@ const OrganizingCommittee = () => {
         <p>
           Dr. D. S. Saini
           <br />
-          Professor, ECE Department
+          Professor & HOD, ECE Department
         </p>
       </div>
 
@@ -125,7 +125,7 @@ const OrganizingCommittee = () => {
           <li>Gaurav Joshi, Sr. RF Engineer, Phoenix, Arizona, US</li>
           <li>Dr. Balwinder Sodhi, Associate Prof., IIT Ropar, CSE</li>
           <li>Dr. Ghanshyam Singh, Prof., ECE, MNIT Jaipur</li>
-          <li>Prof. Buajesh Kaushik, IIT Rorkee, ECE</li>
+          <li>Prof. Brajesh Kaushik, IIT Rorkee, ECE</li>
           <li>
             Dr. Yashwant Singh, Prof & HOD (CSE) & Registrar, Central Univ,
             Jammu
@@ -137,7 +137,7 @@ const OrganizingCommittee = () => {
           <li>Dr. Yograj Singh Duksh, Prof. ECE, MJP Rohilkhand University</li>
           <li>Dr. Mohammed Wajid, Associate Prof., (ECE), AMU</li>
           <li>
-            Dr. Vinay Kumar, Associate Prof., ECE, Thapar University, Patiala
+            Dr. Vinay Kumar, Prof. ECE, Thapar University, Patiala
           </li>
           <li>Prof. Iqbal Ali, ECE, Jamia Millia University</li>
           <li>Dr. Bharat Singh Rajpurohit, Associate Prof. ECE, IIT Mandi</li>
