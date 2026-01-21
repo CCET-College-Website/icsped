@@ -4,6 +4,8 @@ import ConferenceMarquee from '../components/marquee/marquee';
 import ConferenceTheme from './conference-theme';
 import Impdate from './Impdate';
 import Contact from './Contact';
+import ConferencePlan from '../components/pdfs/Conference-plan.jsx';
+import TimeSchedule from '../components/pdfs/Time-schedule.jsx';
 import CCET_Logo from '../components/home/CCET_Logo';
 import IEEE_Logo from '../components/home/IEEE_Logo';
 import './Home.css';
@@ -40,11 +42,11 @@ export default function Home() {
                     <div className="organizer-info">
                         <span className="organized-by">Organised by:</span><br/>
                         <strong>
-                        Department of Electronics and <br/>
-                        Communication Engineering<br/>
-                        Chandigarh College of Engineering  <br/>
-                        and Technology <br/>
-                        Sector- 26, Chandigarh
+                            Department of Electronics and <br/>
+                            Communication Engineering<br/>
+                            Chandigarh College of Engineering  <br/>
+                            and Technology <br/>
+                            Sector- 26, Chandigarh
                         </strong>
                     </div>
                 </div>
@@ -59,6 +61,12 @@ export default function Home() {
             </div>
             <div className="section-container slide-in-section">
                 <Impdate />
+            </div>
+            <div className="section-container fade-in-section">
+                <ConferencePlan />
+            </div>
+            <div className="section-container slide-in-section">
+                <TimeSchedule />
             </div>
             <div className="section-container fade-in-section">
                 <Contact />
