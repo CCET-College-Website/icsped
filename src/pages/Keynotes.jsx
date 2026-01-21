@@ -10,12 +10,8 @@ export default function Keynotes() {
             <div className={styles.keynoteUnderline}></div>
 
             <ul className={styles.keynoteList}>
-              <li>1. Prof. Sukumar Mishra, Director, IIT (ISM) Dhanbad</li>
-              <li>2. Dr. Pushpak Bhattacharya, Professor CSE, IIT Mumbai</li>
-              <li>3. Dr. Gurunath, Associate Prof., Electrical Engineering, IISC, Bangalore</li>
-              <li>4. Dr. Tapas Chakravarty, Principal Scientist, TCS Bangalore, India</li>
-              <li>5. Dr. Sridhar Sukumar, Vice President, Accenture, India</li>
-              <li>6. Dr. Vipin Kumar, Chief Scientist, CSIO-CSIR, Chandigarh</li>
+              <li>1. Dr. C.C. Reddy, Professor and Head, Electrical Engineering Department, IIT Ropar</li>
+              <li>2. Dr. Ashish Sharma, Department of Climate, Meteorology & Atmospheric Sciences at the University of Illinois Urbana-Champaign, USA</li>
             </ul>
           </div>
         </section>

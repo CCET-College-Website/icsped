@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.pdfViewerPage {
+    width: 100%;
+    background: white;
+    min-height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pdfViewerContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.pdfViewerHeader {
+    background: linear-gradient(135deg, #3a0e20, #6b1f3a, #8b2f50);
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.pdfViewerTitle {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.pdfViewerContent {
+    padding: 40px;
+    background: #f9f9f9;
+}
+
+.pdfControls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.pdfButton {
+    background: linear-gradient(135deg, #3a0e20, #6b1f3a);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(58, 14, 32, 0.3);
+}
+
+.pdfButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(58, 14, 32, 0.5);
+    background: linear-gradient(135deg, #4a1630, #7b2f4a);
+}
+
+.pdfButton:active {
+    transform: translateY(0);
+}
+
+.pdfButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.downloadButton {
+    background: linear-gradient(135deg, #2e7d32, #43a047);
+}
+
+.downloadButton:hover {
+    background: linear-gradient(135deg, #388e3c, #4caf50);
+}
+
+.pdfIframe {
+    width: 100%;
+    height: 80vh;
+    min-height: 500px;
+    max-height: 800px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.downloadSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .pdfViewerPage {
+        padding: 0;
+    }
+
+    .pdfViewerContainer {
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .pdfViewerHeader {
+        padding: 20px 15px;
+    }
+
+    .pdfViewerTitle {
+        font-size: 1.5rem;
+    }
+
+    .pdfViewerContent {
+        padding: 15px 10px;
+    }
+
+    .pdfControls {
+        gap: 10px;
+    }
+
+    .pdfButton {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+
+    .pdfIframe {
+        height: 60vh;
+        min-height: 400px;
+        max-height: 600px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pdfViewerPage {
+        padding: 0;
+    }
+
+    .pdfViewerContainer {
+        border-radius: 0;
+    }
+
+    .pdfViewerHeader {
+        padding: 15px 10px;
+    }
+
+    .pdfViewerTitle {
+        font-size: 1.3rem;
+    }
+
+    .pdfViewerContent {
+        padding: 10px 8px;
+    }
+
+    .pdfButton {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        width: 90%;
+        max-width: 250px;
+    }
+
+    .pdfIframe {
+        height: 55vh;
+        min-height: 350px;
+        max-height: 500px;
+    }
+
+    .downloadSection {
+        margin-top: 15px;
+        padding-top: 15px;
+    }
+}

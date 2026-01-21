@@ -39,9 +39,18 @@
     "email": "anilrose@ccet.ac.in",
     "phone": "+919416234853"
   },
+  "pdfLinks": {
+    "icon": "📄",
+    "title": "",
+    "links": [
+      { "name": "Click here to view Conference Plan" },
+      { "name": "Click here to view Time Schedule" }
+    ]
+
+  },
   "settings": {
     "animationDuration": "30s",
-    "separator": "●",
+    "separator": "◆",
     "pauseOnHover": true
   }
 }
